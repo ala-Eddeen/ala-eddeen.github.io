@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+
+    <!-- Security (fixed) -->
+    <meta http-equiv="Content-Security-Policy"
+          content="
+            default-src 'self';
+            style-src 'self' 'unsafe-inline';
+            script-src 'none';
+            img-src 'self' data:;
+            object-src 'none';
+            base-uri 'none';
+            frame-ancestors 'none';
+          ">
+
+    <meta http-equiv="Referrer-Policy" content="no-referrer">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soon…</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: system-ui, sans-serif;
+            background: linear-gradient(-45deg, #020617, #0f172a, #020617);
+            background-size: 400% 400%;
+            animation: bg 18s ease infinite;
+            color: white;
+        }
+
+        @keyframes bg {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            font-size: clamp(3rem, 10vw, 6rem);
+            letter-spacing: 0.15em;
+            text-transform: lowercase;
+            text-shadow: 0 0 40px rgba(56,189,248,0.4);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>soon…</h1>
+</body>
+</html>
